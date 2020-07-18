@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.landding-page{
+    background-image: url("https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=793&q=80");
+    background-size: cover;
+    height: 100vh;
+
+    background-attachment: fixed;
+    display: grid;
+    filter: brightness(80%);
+    place-items: center;
+    h1{
+        color: #ffffff;
+    }
+}
+
+.navbar{
+    background-color: #000000;
+    display: flex;
+    position: sticky;
+    top: 0;
+    
+    align-items: center;
+    img{width: 2em; 
+        margin: 10px;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        justify-self: end;
+        li{
+          
+            display: inline-block;
+            margin: auto;
+          
+          a{
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 10px;
+            font-size: 13px;
+            &:hover{
+                background-color:  #4CAF50;
+          
+               cursor: pointer;
+            }
+          }
+        }
+    }
+
+}
+
+.perkenalan{
+    margin:30px ;
+    .intro{
+        display: grid;
+        justify-items: center;
+        img{
+            width: 300px;
+        }
+        p{
+            text-align: justify;
+            width: 300px;
+        }
+    }
+    .hasil{
+        margin: 10vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .student{
+            display: grid;
+            justify-items: start;
+            img{
+                width: 300px;
+            }
+            p{
+                text-align: justify;
+                width: 300px;
+            }
+        }
+        .hasil-belajar{
+            display: grid;
+            float:right;
+            justify-items: end;
+            img{
+                width: 300px;
+            }
+            p{
+                text-align: justify;
+                width: 300px;
+            }
+        }
+    }
+
+}
+.portofolio{
+    display: grid;
+    justify-content: center;
+  
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    img{
+            
+        margin: 3px;
+        width: 300px;
+    }
+    .satu{
+        align-self: center;
+    }
+    .dua{
+        align-self: center;
+    }
+    .tiga{
+        align-self: center;
+    }
+    .empat{
+        align-self: center;
+    }
+}
+footer{
+    background-color: #000000;
+    text-align: center;
+    height: 50px;
+    display: block;
+    padding:15px 20px ;
+    color: #ffffff;
+}
+.kontak{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'inputan icon';
+    h1{
+        text-decoration: underline;
+        text-align: center;
+    }
+    .inputan{
+        grid-area: inputan;
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        button{
+            background-color:#28816F ;
+            border: none;
+            outline: none;
+            margin-top: 10px;
+            color: #ffffff;
+            &:hover{
+               background-color:#146A59 ;
+            }
+        }
+    }
+    .icon{
+        grid-area: icon;
+        display: flex;
+     
+        flex-direction: column;
+        a{
+            margin: 50px;
+            font-size: 20px;
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 680px ){
+    .navbar{
+       
+        img{
+            display: none;
+        }
+        ul{
+           
+          li{
+            text-align: center;
+              a{
+                  text-align: center;
+              }
+          }
+        }
+    }
+    .perkenalan{
+        .intro{
+            img{
+                width: 200px;
+               
+                justify-self: center;
+            }
+           p{
+               font-size: 10px;
+               width: 200px;
+           }
+        }
+       .hasil{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        .student{
+            img{
+                width: 200px;
+               
+                justify-self: center;
+            }
+            p{
+                font-size: 10px;
+                width: 200px;
+            }
+        }
+        .hasil-belajar{
+            img{
+                width: 200px;
+               
+                justify-self: center;
+            }
+            p{
+                font-size: 10px;
+                width: 200px;
+            }
+        }
+       }
+    
+    }
+  
+    .portofolio{
+        .gambar-portofolio{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .kontak{
+        display: flex;
+        flex-direction: column;
+        .icon{
+           display: flex;
+           flex-direction: row;
+           a{
+               margin-top: -30px;
+             
+               i{
+                   display: inline-block;
+                   vertical-align: middle;
+               }
+               span{
+                font-size: 14px;
+            }
+           }
+        }
+    }
+}

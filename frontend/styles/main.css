@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.landding-page {
+  background-image: url("https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=793&q=80");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  place-items: center;
+}
+
+.landding-page h1 {
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar img {
+  width: 2em;
+  margin: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: auto;
+}
+
+.navbar ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 10px;
+  font-size: 13px;
+}
+
+.navbar ul li a:hover {
+  background-color: #4CAF50;
+  cursor: pointer;
+}
+
+.perkenalan {
+  margin: 30px;
+}
+
+.perkenalan .intro {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.perkenalan .intro img {
+  width: 300px;
+}
+
+.perkenalan .intro p {
+  text-align: justify;
+  width: 300px;
+}
+
+.perkenalan .hasil {
+  margin: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.perkenalan .hasil .student {
+  display: -ms-grid;
+  display: grid;
+  justify-items: start;
+}
+
+.perkenalan .hasil .student img {
+  width: 300px;
+}
+
+.perkenalan .hasil .student p {
+  text-align: justify;
+  width: 300px;
+}
+
+.perkenalan .hasil .hasil-belajar {
+  display: -ms-grid;
+  display: grid;
+  float: right;
+  justify-items: end;
+}
+
+.perkenalan .hasil .hasil-belajar img {
+  width: 300px;
+}
+
+.perkenalan .hasil .hasil-belajar p {
+  text-align: justify;
+  width: 300px;
+}
+
+.portofolio {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portofolio h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.portofolio img {
+  margin: 3px;
+  width: 300px;
+}
+
+.portofolio .satu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.portofolio .dua {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.portofolio .tiga {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.portofolio .empat {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer {
+  background-color: #000000;
+  text-align: center;
+  height: 50px;
+  display: block;
+  padding: 15px 20px;
+  color: #ffffff;
+}
+
+.kontak {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'inputan icon';
+}
+
+.kontak h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.kontak .inputan {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: inputan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px;
+}
+
+.kontak .inputan button {
+  background-color: #28816F;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.kontak .inputan button:hover {
+  background-color: #146A59;
+}
+
+.kontak .icon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: icon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kontak .icon a {
+  margin: 50px;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 680px) {
+  .navbar img {
+    display: none;
+  }
+  .navbar ul li {
+    text-align: center;
+  }
+  .navbar ul li a {
+    text-align: center;
+  }
+  .perkenalan .intro img {
+    width: 200px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .perkenalan .intro p {
+    font-size: 10px;
+    width: 200px;
+  }
+  .perkenalan .hasil {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .perkenalan .hasil .student img {
+    width: 200px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .perkenalan .hasil .student p {
+    font-size: 10px;
+    width: 200px;
+  }
+  .perkenalan .hasil .hasil-belajar img {
+    width: 200px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .perkenalan .hasil .hasil-belajar p {
+    font-size: 10px;
+    width: 200px;
+  }
+  .portofolio .gambar-portofolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .kontak {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .kontak .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .kontak .icon a {
+    margin-top: -30px;
+  }
+  .kontak .icon a i {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .kontak .icon a span {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
